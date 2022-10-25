@@ -73,6 +73,8 @@ content: by default, is the display are of your element content
             the width of your page (if the page width is set to a
             specific value)
 calculation page-width = lm + lb + lp + content + rp + + rb + rm
+once we start ysubg flex-box which allows for multiple elements 
+    the equal is expand to page-width = Sum(element-widths)
 
 assume a fixed center page widge of 960
 
