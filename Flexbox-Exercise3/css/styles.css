@@ -70,7 +70,8 @@ body {
 main {
     background-color: lightgrey;
     display: flex; 
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
+    border: 2px solid black;
 }
 /*footer {
     background-color: lightgrey;
@@ -109,33 +110,36 @@ page width = ncolumns * (box) + remainder
 ****************************************************************************************/
 
 .red-paint{
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
     height: 300px;
-    width: 435px;
+    width: 305px;
     background-color: red;
-    
+    border: 2px solid black;
 }
 
 .blue-paint{
-    margin: 30px 0px 0px 30px;
+    margin: 10px 5px 10px 5px;
     height: 300px;
-    width: 435px;
+    width: 305px;
     background-color: blue;
+    border: 2px solid black;
 
 }
 
-.black-paint{
+.yellow-paint{
     
-    margin: 30px 0px 30px 30px;
-    height: 50px;
-    width: 900px;
-    background-color: black;
-    
+    margin: 10px 10px 10px 5px;
+    height: 300px;
+    width: 305px;
+    background-color: yellow;
+    border: 2px solid black;
 }
 
 /* 
 960 = 30 + 0 + 0 + content + 0 + 0 + 0 + 30
 960 = 60 + content
 900 = content
+*/
