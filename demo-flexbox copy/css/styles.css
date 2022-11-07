@@ -4,11 +4,11 @@ body {
 }
 
 .container {
-    
     width: 960px;
     margin: 0 auto;
     font-size: 100%;
     line-height: 1.5
+    
 }
 
 
@@ -68,74 +68,66 @@ body {
 ***********************************************************************************************/
 
 main {
+    border: 2px solid black;
     background-color: lightgrey;
     display: flex; 
-    flex-wrap: wrap; 
+    flex-wrap:nowrap; 
 }
-/*footer {
-    background-color: lightgrey;
-    display: flex; 
-}*/ 
-
-/**************************************************************************************
-
-give the classes some height and width due to the fact that the elements do NOT 
-    contain any textural content 
-
-set height to a chosen value of 300px 
-
-set the width of each box to fix the final given image 
-
-margin: 30px 
-
-padding and border= 0
-
-page width is 960;
-
-page width = (box) + (box) + ... + remainder
-
-our boxes are of equal size 
-
-if not equal, add all the box
-
-
-page width = ncolumns * (box) + remainder
-960 = 2 * (lm + lb + lp + content + rp + rb + rm) + remainder
-960 = 2 * (30 + 0 + 0 + content + 0 + 0 + 0) + 30
-960 = 60 + 30 + 2content
-960 - 90 = 2content
-870 / 2 = content
-435 = content
-****************************************************************************************/
 
 .red-paint{
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    height: 300px;
-    width: 435px;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 600px;
+    width: 150px;
     background-color: red;
-    
+
 }
 
+
 .blue-paint{
-    margin: 30px 0px 0px 30px;
-    height: 300px;
-    width: 435px;
+    border: 2px solid black;
+    margin: 10px 0px 10px 10px;
+    height: 292.5px;
+    width: 770px;
     background-color: blue;
 
 }
+/*
+ 960 - (2 + 2 + 10 + 2 + 150) = 794 (remainding width minus red content) 
 
-.black-paint{
-    
-    margin: 30px 0px 30px 30px;
-    height: 50px;
-    width: 900px;
-    background-color: black;
+794 = 10 + 2 + 0 + content + 0 + 2 + 0 + 10
+794 = 24 + content
+770 = content
+*/
+
+/*
+height two boxes (600 given height for red box)
+ 600 = 2*(content +15)
+ 585 = 2content
+ 292.5 = content
+*/
+.green-paint{
+    border: 2px solid black;
+    margin: 0px 10px 10px 10px;
+    height: 292.5px;
+    width: 770px;
+    background-color: limegreen;
     
 }
 
-/* 
-960 = 30 + 0 + 0 + content + 0 + 0 + 0 + 30
-960 = 60 + content
-900 = content
+/*
+ 960 - (2 + 2 + 10 + 2 + 150) = 794 (remainding width minus red content) 
+
+794 = 10 + 2 + 0 + content + 0 + 2 + 0 + 10
+794 = 24 + content
+770 = content
+*/
+
+/*
+height for the two boxes (600 given height for red box)
+ 600 = 2*(content +15)
+ 585 = 2content
+ 292.5 = content
+*/
